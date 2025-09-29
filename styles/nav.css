@@ -1,0 +1,64 @@
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: var(--color-nav-bg);
+    padding: 10px;
+    text-align: center;
+    min-width: 200px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-item {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding: 15px 0;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--color-purple);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: var(--color-gold-dark);
+    color: white;
+}
+
+.nav-item:focus-visible {
+    outline: 3px solid var(--color-purple);
+    outline-offset: 2px;
+}
+
+.nav-item-active {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding: 15px 0;
+    background-color: var(--color-gold);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--color-purple);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item-active:focus-visible {
+    outline: 3px solid var(--color-purple);
+    outline-offset: 2px;
+}
+
+/* Mobile responsive navigation */
+@media (max-width: 768px) {
+    .nav {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .nav-item,
+    .nav-item-active {
+        padding: 12px 0;
+    }
+}

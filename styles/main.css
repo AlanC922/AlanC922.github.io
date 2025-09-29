@@ -1,0 +1,80 @@
+.pattern {
+    width: 100%;
+    max-height: 1000px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 0.45;
+}
+
+.about-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.about-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    line-height: 1.8;
+    color: var(--color-text);
+    max-width: 65ch;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.contact {
+    background-color: var(--color-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10%;
+    margin: 1rem auto;
+    display: block;
+}
+
+.links {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive adjustments for contact page */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+    
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+}
